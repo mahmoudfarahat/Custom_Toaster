@@ -1,6 +1,7 @@
 <div class="toastor"  [ngClass]="{
   success: icon == '✓',
-  error: icon == 'x'
+  error: icon == 'x',
+  saved: icon == '!'
 }" *ngIf="this.tosatorService.toastorStatus">
   <div class="close" (click)="closeToastor()" >x</div>
 <div class="toastor-content" >

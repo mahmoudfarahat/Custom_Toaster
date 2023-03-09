@@ -24,9 +24,12 @@ message = {}
     }else if(status === 'danger'){
       this.message  = { message :"there is An error"  ,icon :'x'}
 
+    }else if(status === 'saved'){
+      this.message  = { message :"Data saved"  ,icon :'!'}
     }
 
   this.tosatorService.tosatorMessage.next(this.message )
+  
   this.tosatorService.toastorStatus= true
   }
 

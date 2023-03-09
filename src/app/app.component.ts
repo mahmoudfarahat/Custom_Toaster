@@ -10,24 +10,24 @@ export class AppComponent {
   title = 'customToaster';
   message =''
   icon =''
+    time:any
   constructor(public tosatorService:TosatorService) {
 
   }
   ngOnInit(): void {
-    this.tosatorService.tosatorMessage.subscribe(message=>{
-      console.log(message)
-    this.message = message.message
-    this.icon =message.icon
 
-    if( this.tosatorService.toastorStatus= true){
-      setTimeout(() => {
+    this.tosatorService.tosatorMessage.subscribe(message=>{
+
+      window.clearTimeout(this.time)
+      console.log(message)
+      this.message = message.message
+      this.icon =message.icon
+
+   this.time = setTimeout((a:any) => {
         this.tosatorService.toastorStatus= false
       }, 5000);
-    }
 
     })
-
-
 
   }
 

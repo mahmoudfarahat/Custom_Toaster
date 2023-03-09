@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class TosatorService {
 
 
-  tosatorMessage = new BehaviorSubject<any>(null)
+  tosatorMessage = new BehaviorSubject<any>('')
 
   constructor() { }
 

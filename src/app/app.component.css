@@ -24,13 +24,15 @@
   align-items:center;
   margin-left: 10px;
   color: white;
+  font-size: 9px;
+  font-weight: bolder;
 }
 
 
 
 .tickIcon {
 
- 
+ font-weight: bolder;
   border: 1px solid white;
   border-radius: 50%;
   color: white;
@@ -47,5 +49,8 @@
 }
 .error{
   background-color: rgb(250, 65, 65);
+}
+.saved{
+  background-color: rgb(65, 250, 90);
 }
 /* only needed for this sample */
