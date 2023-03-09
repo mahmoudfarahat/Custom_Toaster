@@ -1,0 +1,17 @@
+<div class="toastor"  [ngClass]="{
+  success: icon == '✓',
+  error: icon == 'x'
+}" *ngIf="this.tosatorService.toastorStatus">
+  <div class="close" (click)="closeToastor()" >x</div>
+<div class="toastor-content" >
+<span class="tickIcon"
+
+>{{icon}}</span>
+
+
+<span>{{message}}</span>
+</div>
+</div>
+
+
+<router-outlet></router-outlet>

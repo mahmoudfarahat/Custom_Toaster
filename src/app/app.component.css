@@ -1,0 +1,51 @@
+.toastor{
+  height: 40px;
+
+  width: 200px;
+  border-radius: 2px;
+  position: fixed;
+  align-items:center;
+  display: flex;
+}
+
+.close{
+  position: absolute;
+  top: -1px;
+  right: 3px;
+  font-size: 10px;
+  cursor: pointer;
+  color: white;
+
+}
+
+
+.toastor-content{
+  display: flex;
+  align-items:center;
+  margin-left: 10px;
+  color: white;
+}
+
+
+
+.tickIcon {
+
+ 
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  font: bold 6px/1px Helvetica, Verdana, Tahoma;
+  height: 4px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  width: 4px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.success{
+  background-color: rgb(148, 238, 238);
+}
+.error{
+  background-color: rgb(250, 65, 65);
+}
+/* only needed for this sample */
